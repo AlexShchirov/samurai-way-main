@@ -6,7 +6,7 @@
   
   grid-template-rows: 60px 1fr; 
   grid-template-columns: 2fr 10fr;
-  /* gap: 0px 0px;  */
+  gap: 10px 10px; 
   grid-template-areas: 
   "h h"
   "n c";
@@ -14,7 +14,7 @@
 
 .header{
   grid-area: h;
-  background-color: rgb(5, 240, 44)3c3;
+  background-color: rgb(4, 174, 33)3c3;
 }
 .logo{
   width: 20px;
@@ -25,7 +25,7 @@
   background-color: #fcb2ff;
 }
 
-.content{
+.profile{
   grid-area: c;
   background-color: #cebbfe;
 }

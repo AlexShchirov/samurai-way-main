@@ -1,0 +1,8 @@
+.profile{
+    grid-area: c;
+    background-color: #cebbfe;
+    }
+.wideImg{
+    width: 100%;
+    height: 200px;
+    }

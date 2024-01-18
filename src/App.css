@@ -12,24 +12,6 @@
   "n c";
 }
 
-.header{
-  grid-area: h;
-  background-color: rgb(4, 174, 33)3c3;
-}
-.logo{
-  width: 20px;
-}
 
-.nav{
-  grid-area: n;
-  background-color: #fcb2ff;
-}
 
-.profile{
-  grid-area: c;
-  background-color: #cebbfe;
-}
-.wideImg{
-  width: 100%;
-  height: 200px;
-}
+

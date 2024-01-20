@@ -6,7 +6,7 @@ export const Header = () => {
             <header className={s.header}>
                 <div>
                     <img
-                        className="logo"
+                        className={s.logo}
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRENF9uv9UWIWWbExsgj7XyX58xMFAOZTzUSQ&usqp=CAU"
                         alt=""
                     />

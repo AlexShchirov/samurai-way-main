@@ -14,7 +14,7 @@ export const NavBar = () => {
                     <a href="3">News</a>
                 </div>
                 <div className={`${s.item} ${s.active}`}>
-                    <a href="4">Mesic</a>
+                    <a href="4">Music</a>
                 </div>
                 <div className={s.item}>
                     <a href="5">Settings</a>

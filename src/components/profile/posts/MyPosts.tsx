@@ -1,25 +1,31 @@
-import React from "react";
+import React, { LegacyRef } from "react";
 import s from "./MyPosts.module.css";
 import { Post } from "./post/Post";
 
-export const MyPosts = () => {
-    let posts = [
-        { id: 1, messages: "How are you?", likesCount: 9 },
-        { id: 2, messages: "It's my first post", likesCount: 11 },
-    ];
+export const MyPosts = (props:any) => {
+    
 
-    let postsElements = posts.map((p) => (
+    let postsElements = props.posts.map((p:any) => (
         <Post message={p.messages} likes={p.likesCount} />
     ));
+
+    let newPostElement:LegacyRef<HTMLTextAreaElement> = React.createRef()
+
+    const addPost = () => {
+        let text = newPostElement.current?.value
+        alert(text)
+    }
+
+
     return (
         <div className={s.postsBlock}>
             <h3>My posts</h3>
             <div>
                 <div>
-                    <textarea></textarea>
+                    <textarea ref={newPostElement}></textarea>
                 </div>
                 <div>
-                    <button>Add Post</button>
+                    <button onClick={addPost}>Add Post</button>
                 </div>
             </div>
             <div className={s.posts}>{postsElements}</div>
